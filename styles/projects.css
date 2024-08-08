@@ -1,0 +1,182 @@
+body{
+    background-color:white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row; /* to lay them out horizontally*/
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    background-color: #333;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:#333;
+    z-index: 100;
+  
+
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header p{
+    font-family: outfit, Arial;
+    color: white;
+
+}
+
+.portfolio-icon-container, .home-icon-container , .info-icon-container, .folder-icon-container, .contact-icon-container, .portfolio-icon-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px; /*limits the change in width to up to 300px*/
+    display: flex;
+    align-items: center;
+}
+
+
+.portfolio-icon-container .tooltip, .home-icon-container .tooltip, .info-icon-container .tooltip, .folder-icon-container .tooltip, .contact-icon-container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+   
+
+}
+
+.portfolio-icon-container:hover .tooltip,
+.home-icon-container:hover .tooltip,
+.info-icon-container:hover .tooltip,
+.folder-icon-container:hover .tooltip,
+.contact-icon-container:hover .tooltip{
+    opacity: 1;
+   
+
+}
+.tooltip{
+    font-family: outfit, Arial;
+    margin-left: 5px;       
+
+}
+
+.portfolio-icon, .home-icon, .info-icon, .folder-icon, .contact-icon{
+    height: 30px;
+    margin-left: 30px
+
+}
+
+main {
+    margin-top: 20px;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+
+
+footer{
+    background: #333333;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    margin-top: auto;
+
+}
+
+.linkedin-social-icon, .git-social-icon {
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 25px;
+
+}
+
+.git-social-icon{
+    margin-right: 10px;
+    height:30px;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.image img {
+    width: 150%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.description {
+    margin-left: 100px;
+}
+
+.description h2 {
+    margin-top: 0;
+}
+
+.description p {
+    line-height: 1.6;
+}
+
+.image a{
+    text-decoration: none ;
+}
+
+.image a:hover {
+    opacity: 0.8;
+}
